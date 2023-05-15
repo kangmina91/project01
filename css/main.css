@@ -48,6 +48,11 @@ nav li a::after {
     transition: 0.5s;
 }
 
+nav li.on a::after {
+    width: 100px;
+
+}
+
 .section .inner {
     display: flex;
     gap: 30px;
@@ -55,10 +60,7 @@ nav li a::after {
     margin: 0 auto;
 }
 
-nav li.on a::after {
-    width: 100px;
 
-}
 
 .section figure {
     position: relative;
@@ -82,7 +84,7 @@ nav li.on a::after {
     position: absolute;
     top: 30px;
     right: 20px;
-    width: 50px;
+    width: 40px;
     height: 20px;
     background: green;
     border-radius: 20px 0;

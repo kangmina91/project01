@@ -12,8 +12,6 @@ $(function () {
         afterRender: function () {
             setTimeout(function () { $('.section').eq(0).addClass('on') })
         },
-
-
         onLeave: function (index, nextIndex, direction) {
             console.log(index, nextIndex, direction);
             $('h1 span').text(nextIndex)
