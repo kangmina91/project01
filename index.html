@@ -6,10 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>강미나01</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- 링크 순서 중 제일 첫번째는 리셋, 내가 만들고 적용할 css는 맨 끝에 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- 스크립트 순서 중요- 제이쿼리 라이브러리는 처음에, 내가 만들고 적용할 스크립트는 맨 끝에 -->
+    <!-- <script src="./js/main.js" defer></script>  defer는 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨을 명시.-->
 </head>
 
+
+
 <body>
-    <h1><img src="./images/grafflogo.png" alt=""></h1>
+    <header class="header">
+        <h1>
+            <img src="./images/grafflogo.png" alt="">
+            <span></span>
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="on"><a href="#01">01</a></li>
+            <li><a href="#02">02</a></li>
+            <li><a href="#03">03</a></li>
+        </ul>
+    </nav>
+    <div class="main_full">
+        <!-- fullpage 만들 때는 class 명을 section으로 지정해줘야 한다. -->
+        <div class="section">
+            <figure>
+                <img src="./images/lesedilarona01.jpg" alt="">
+            </figure>
+            <h2>기능구현.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        </div>
+        <div class="section">
+            <figure><img src="./images/lesedilarona02.jpg" alt=""></figure>
+            <h2>기능구현.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="section">
+            <figure><img src="./images/lesedilarona03.jpg" alt=""></figure>
+            <h2>기능구현.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
